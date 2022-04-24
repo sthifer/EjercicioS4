@@ -2,7 +2,7 @@
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
 }
-header, .enlacesextra, .modelos{
+header, .enlacesextra, .modelos, .footer-enlaces, .copy,.video,.iconos{
     width: 70vw;
     margin: auto;
 }
@@ -49,10 +49,10 @@ header img{
     font-size: 1.5em;
 }
 .hero a{
-    background-color: blue;
+    background-color: rgb(21, 115, 255);
     color: white;
     text-decoration: none;
-    padding: 2rem;
+    padding: 1rem 8rem 1rem 8rem;
 }
 #hero-a{
     margin: 50px 0 50px 0;
@@ -79,7 +79,7 @@ header img{
 }
 .listacoches-destacado{
     font-weight: bold;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid rgb(67, 137, 243);
     font-size: 2em;
 }
 .listavehiculo{
@@ -96,22 +96,51 @@ header img{
     display: flex;
     flex-direction: column;
 }
-.vehiculo a::before, .enlacesextra a::before{
+.vehiculo a::before, .enlacesextra a::before, .video a::before{
     content: '> ';
 }
-.vehiculo a,.enlacesextra a{
+.vehiculo a,.enlacesextra a,  .video a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+}
+
+.video,.iconos{
+    display: flex;
+}
+.video div{
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+}
+
+.video img, .video iframe{
+    width: 100%;
+    height: 300px;
+}
+.iconos{
+    padding: 75px 0 75px 0;
+}
+.iconos div{
+    width: 20%;
+    background-color: rgb(240, 238, 238);
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 .enlacesextra{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .enlacesextra ul{
     list-style: none;
     display: flex;
     align-items: center;
     margin: 0;
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -120,4 +149,42 @@ header img{
     width: 23%;
     margin: 10px;
     padding: 10px;
+}
+
+
+footer{
+    background-color: rgb(214, 214, 214);
+    padding-top: 150px;
+}
+
+.footer-enlaces{
+    border-top: 1px solid grey;
+}
+
+.footer-enlaces, .copy, .copy ul{
+    display: flex;
+}
+.footer-enlaces ul, .copy ul{
+    list-style: none;
+    padding: 0;
+    line-height: 2em;
+}
+.footer-enlaces h4{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.footer-enlaces div{
+    width: 25%;
+}
+.copy{
+    justify-content: space-between;
+}
+.copy li{
+    margin-left: 20px;
+}
+.copy-fondo{
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
