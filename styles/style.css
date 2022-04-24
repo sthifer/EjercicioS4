@@ -1,0 +1,123 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+header, .enlacesextra, .modelos{
+    width: 70vw;
+    margin: auto;
+}
+header{
+    display: flex;
+    max-height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header-derecha{
+    display: flex;
+    align-items: center;
+}
+header li,header img{
+    margin-left: 35px;
+}
+header img{
+    height: 100%;
+    width: 150px;
+}
+.hero{
+    width: 100vw;
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+#fotobmw{
+    background-image: url("../image/bmw-background.jpg");
+}
+.hero h1{
+    font-weight: bold;
+    font-size: 3em;
+}
+.hero p{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.hero a{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+}
+#hero-a{
+    margin: 50px 0 50px 0;
+}
+#hero-contenido{
+    margin-left: 4rem;
+}
+.modelos{
+    padding-top: 10rem;
+}
+.modelos h2{
+    color: gray;
+    font-size: 1em;
+}
+.listacoches{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.listacoches li{
+    margin-left: 3rem;
+    padding-bottom: 1rem;
+}
+.listacoches-destacado{
+    font-weight: bold;
+    border-bottom: 3px solid blue;
+    font-size: 2em;
+}
+.listavehiculo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vehiculo{
+    width: 25%;
+}
+.vehiculo img, .enlacesextra img{
+    width: 300px;
+}
+#vehiculo-detalle{
+    display: flex;
+    flex-direction: column;
+}
+.vehiculo a::before, .enlacesextra a::before{
+    content: '> ';
+}
+.vehiculo a,.enlacesextra a{
+    text-decoration: none;
+    color: black;
+}
+.enlacesextra{
+    margin-top: 100px;
+}
+.enlacesextra ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.enlacesextra li{
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+}
